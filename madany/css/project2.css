@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #343a40;
+  --background-color-parent: #191b1d;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
+a {
+  text-decoration: none !important;
+}
+ul,
+ol {
+  list-style: none !important;
+}
+/* start nav */
+.nav-link ul {
+  flex-grow: 1;
+}
+
+.test3:hover {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+.test4 button .bg-white{
+  --bs-bg-opacity:0 !important;
+    background-color: #6c757d !important;
+
+}
+
+  
+
+.nav-logo {
+  width: 150px;
+}
+
+.sign-btn {
+  background-color: #5143d9 !important;
+  color: white;
+}
+
+.sign-btn:hover {
+  color: #5143d9 !important;
+  background-color: white !important;
+  border: 1px solid #5143d9;
+}
+/* end nav */
+/* form{
+  transition: .3s all !important;
+} */
+input:focus {
+  transform: scale(1.1);
+  transition: 0.5s all !important;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider);
+  color: white !important;
+  /* Change the color to white */
+}
+.color-parent {
+  background-color: var(--main-color) !important;
+}
+/* .color-parent{
+  border: none !important;
+} */
+.search-icon {
+  cursor: pointer;
+  top: 12px;
+  right: 14%;
+}
+.placeholder-color::placeholder {
+  color: white !important;
+}
+.search-icon:hover {
+  color: rgb(107, 107, 211);
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+.card-color {
+  cursor: pointer;
+  background-color: var(--background-color-parent) !important;
+}
+
+.content {
+  background-color: var(--main-color) !important;
+}
+.placeholder-color::placeholder {
+  color: white !important;
+}
+
+.test {
+  width: 350px !important;
+}
+
+.arrow-move {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--background-color-parent);
+}
+.arrow-move:hover {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 1199px) {
+ 
+  h3,
+  form {
+    width: 100%;
+    display: block;
+  }
+}

@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #343a40;
+  --background-color-parent: #191b1d;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
+a {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none !important;
+}
+@media (min-width: 992px) {
+  .move-image {
+    width: 75% !important;
+  }
+}
+/* start nav */
+.nav-link ul {
+  flex-grow: 1;
+}
+
+.test3:hover {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+.test4 button .bg-white{
+  --bs-bg-opacity:0 !important;
+    background-color: #6c757d !important;
+
+}
+
+  
+
+.nav-logo {
+  width: 150px;
+}
+
+.sign-btn {
+  background-color: #5143d9 !important;
+  color: white;
+}
+
+.sign-btn:hover {
+  color: #5143d9 !important;
+  background-color: white !important;
+  border: 1px solid #5143d9;
+}
+/* end nav */
+.booking-form {
+  width: 50% !important;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+  background-color: var(--background-color-parent);
+}
+@media (max-width: 992px) {
+  .booking-form {
+    width: 75% !important;
+    position: relative;
+    top: -70px;
+    left: 0;
+    transform: translate(0);
+    margin: auto;
+  }
+}
+/* .form-color {
+  color: var(--third-color);
+} */
+.select-color {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+.btn-search:hover {
+  transition: 0.3s;
+  /* background-color: #0d0d0e !important; */
+  color: white;
+  transform: scale(1.1);
+}
+/* start vehicles  */
+.vehicles {
+  margin-top: 100px !important;
+}
+.car {
+  width: 7rem;
+  height: 7rem;
+  line-height: 7rem;
+  font-size: 2.5rem;
+  background-color: var(--main-color) !important ;
+  /* background-color: #2a2c31 !important ; */
+}
+.card-color {
+  background-color: var(--background-color-parent) !important;
+}
+.card-title a {
+  text-decoration: none;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.card {
+  cursor: pointer;
+  flex: calc(33.333% - 1.5rem); /* 3 cards per row for md and lg screens */
+}
+.card:hover a {
+  color: #0d6efd !important;
+}
+@media (min-width: 1200px) {
+  .card {
+    flex: calc(
+      16.666% - 1.5rem
+    ); /* 100%/6=16.66 => 6 cards per row for xl screens */
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    flex: 100%;
+  }
+}
+/* start choose */
+.choose-icon {
+  width: 4rem;
+  height: 4rem;
+  line-height: 5rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .choose-icon {
+    margin: auto;
+  }
+}
+/* start mobile */
+.mobile-img {
+  height: 370px;
+}
+.google-img {
+  height: 50px !important;
+}
+
+@media (max-width: 576px) {
+  .google-play-parent {
+    display: block !important;
+  }
+  .google-img {
+    margin-bottom: 10px;
+  }
+  .mobile-resp {
+    margin-top: 24px;
+  }
+}
+/* start question */
+#faq .card {
+  border: none !important;
+}
+.question {
+  background-color: var(--background-color-parent);
+  border-radius: 5px;
+}
+.content {
+  background-color: var(--main-color) !important;
+}
+/* start logos */
+.loop img {
+  position: relative;
+  animation-name: move;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 992px) {
+  @keyframes move {
+    0% {
+      right: -700%;
+    }
+    100% {
+      right: 700%;
+    }
+  }
+}
+.loop:hover img {
+  animation-play-state: paused;
+}
+.logo {
+  filter: grayscale(100%);
+}
+.logo:hover {
+  filter: none;
+  transition: 0.3s;
+}
+.loop-parent {
+  overflow: hidden;
+}
+/* footer */

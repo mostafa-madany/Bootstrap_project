@@ -1,0 +1,210 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.fixed-btn{
+    /* display: none !important; */
+    all: unset;
+    background-color: #5143d9;
+    border-radius: 5px;
+    width: 50px;
+    height: 38px;
+    padding-top: 12px !important;
+}
+
+/* start navbar */
+.nav-link ul {
+    flex-grow: 1;
+}
+
+.nav-logo {
+    width: 150px;
+}
+
+.sign-btn {
+    background-color: #5143d9 !important;
+    color: white;
+}
+
+.sign-btn:hover {
+    color: #5143d9 !important;
+    background-color: white !important;
+    border: 1px solid #5143d9 ;
+    
+}
+/* end navbar */
+
+/* start header */
+.bg-img {
+    background-image: url(../imgs/flight-background.jpg);
+}
+
+.paper svg path {
+    color: white !important;
+    background-color: white !important;
+    fill: white !important;
+}
+
+.paper-left svg {
+    margin-left: -20% !important;
+}
+
+.paper-right svg {
+    margin-left: 20% !important;
+    rotate: 180deg !important;
+}
+/* end header */
+
+.border-dashed {
+    border: 2px dashed blue !important;
+}
+
+.offer-btn {
+    width: 55px !important;   
+}
+
+.pD-h2 {
+    font-size: 3rem;
+}
+
+.dest-img img {
+    transition: 0.4s ease-in all;
+}
+
+.dest-img:hover img {
+    transform: scale(1.04);
+}
+.dest-img:hover button {
+   z-index: 10;
+}
+
+.dest-img:hover .country-title {
+    color: #5143d9;
+}
+
+
+.select-static {
+    width: 45% !important;
+}
+
+
+
+.btn-style-gray {
+    all: unset;
+    background-color: #dfdfe3;
+    color: black;
+}
+
+.btn-style-black {
+    all: unset;
+    background-color: black;
+    color: white;
+}
+
+.ticket_btn {
+    background-color: #5143d9 !important;
+    margin-bottom: -7% !important;
+}
+
+.blog-card:hover h4 , .blog-card:hover h5{
+    color: #5143d9;
+}
+
+/* start sign up */
+.signup_logo {
+    width: 50px;
+
+}
+
+.login {
+    color: #5143d9;
+}
+
+.signup-btn {
+    all: unset;
+    background-color: #5143d9;
+    border-radius: 5px;
+    padding: 7px 0;
+    text-align: center;
+}
+
+.signup-btn:hover{
+    background-color: #4f41cc; 
+}
+
+.sign-in-border{
+    position: relative;
+    text-align: center;
+}
+
+.sign-in-border::before , .sign-in-border::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35%;
+    height: 1px;
+    background-color:#85878a;
+}
+
+.sign-in-border::before{
+    left: 0;
+}
+
+.sign-in-border::after{
+    right: 0;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4f41cc !important;
+    border-color: #4f41cc;
+}
+
+/* #eye {
+    all: unset;
+} */
+
+#eye-close {
+    all: unset;
+    display: block;
+}
+
+#eye-open {
+    all: unset;
+    display: none;
+}
+
+.form-icon {
+    position: relative;
+    animation-name: movementIcon;
+    transform: translateX(0px);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+  }
+  
+  @keyframes movementIcon {
+    50% {
+      transform: translateX(160px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+/* end sign up */
+
+@media(max-width:992px) {
+    .select-static {
+        width: 100% !important;
+
+    }
+
+}
+
+@media(max-width:767px) {
+    .dest-img {
+        width: 80% !important;
+
+        margin: auto;
+
+    }
+}  

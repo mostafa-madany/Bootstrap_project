@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <script src="bootstrap.bundle.js"></script>
+    <style>
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero h6 {
+        font-size: 1.25rem;
+      }
+      /* .card{
+                box-shadow: 1 1 1 1;
+            } */
+
+      .nav-link ul {
+        flex-grow: 1;
+      }
+      .bs-btn {
+        background-color: white;
+      }
+      .bs-btn-border-color {
+        background-color: white;
+      }
+      .btn-danger {
+        color: blueviolet;
+        background-color: aliceblue;
+        border: white;
+      }
+      .btn-danger:hover {
+        background-color: blueviolet;
+        color: white;
+      }
+      .nav-link ul {
+            flex-grow: 1;
+        }
+
+        .nav-logo {
+            width: 150px;
+        }
+
+        .sign-btn {
+            background-color: #5143d9 !important;
+            color: white;
+        }
+
+        .sign-btn:hover {
+            color: #5143d9 !important;
+            background-color: white !important;
+            border: 1px solid #5143d9;
+
+        }
+    </style>
+  </head>
+
+  <body>
+ 
+    <!-- start navbar -->
+    <nav class="container">
+      <div class="nav d-flex flex-nowrap align-items-center justify-content-between pt-3">
+          <div class="nav-brand justify-content-center align-content-center nav-logo">
+              <img class="light-mode-item navbar-brand-item w-100" src="logo.svg" alt="logo" />
+          </div>
+          <div class="nav-link col-lg-5 col-1">
+            <ul class="text-decoration-none list-unstyled d-flex w-100 justify-content-between d-lg-flex d-none pt-3"
+            aria-labelledby="">
+            <li>
+                <a class="text-decoration-none text-dark text-center" href="../momen/index.html">Home</a>
+            </li>
+            <li>
+                <a class="text-decoration-none text-dark text-center" href="about.html">About</a>
+            </li>
+
+            <li>
+                <a class="text-decoration-none text-dark text-center" href="../esraa/flight.html">Flight</a>
+            </li>
+            <li>
+                <a class="text-decoration-none text-dark text-center" href="#">Tour</a>
+            </li>
+            <li>
+                <a class="text-decoration-none text-dark text-center" href="../madany/cab.html">Cabs</a>
+            </li>
+
+            <li>
+                <a class="text-decoration-none text-dark text-center" href="../madany/faq.html">FAQ</a>
+            </li>
+        </ul>
+          </div>
+          <div class="menu-sm w-auto d-lg-none d-sm-flex justify-content-center align-items-center text-center bg-0">
+              <div class="dropdown-center w-50">
+                  <button class="btn btn-secondary dropdown-toggle bg-white border-0" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black"
+                          class="bi bi-list bg-0" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                      </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Home</a></li>
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                      <li><a class="dropdown-item" href="#">Services</a></li>
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="icons d-flex justify-content-end align-items-center">
+              <div class="dropdown m-0 p-0">
+                  <button class=" btn btn-secondary dropdown-toggle bg-0 bg-white border-0 m-0 p-0" type="button"
+                      id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow"
+                          class="bi bi-circle-half theme-icon-active fa-fw" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+                      </svg>
+                  </button>
+                  <ul class="dropdown-menu bg-0" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">dark</a></li>
+                      <li><a class="dropdown-item" href="#">light</a></li>
+                      <li><a class="dropdown-item" href="#">auto</a></li>
+                  </ul>
+              </div>
+              <div class="mx-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-search" viewBox="0 0 16 16">
+                      <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                  </svg>
+              </div>
+              <a href="../esraa/SignUP.html"
+                  class="btn sign-btn d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                  <div class="d-flex p-0 m-0 justify-content-center align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-download me-2" viewBox="0 0 16 16">
+                          <path
+                              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                          <path
+                              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+                      </svg>
+                  </div>
+                  <p class="p-0 m-0">Sign up</p>
+              </a>
+          </div>
+      </div>
+  </nav>
+  <!-- end navbar -->
+
+    <div class="hero justify-content-center">
+      <div class="container">
+        <div class="text justify-content-center p-5" style="width: 85%">
+          <h1 class="p-2 pb-4" style="font-size: 3.5rem; font-weight: 700">
+            Let's connect and get to know each other
+          </h1>
+          <h6 class="text-black-50 ps-2">
+            Passage its ten led hearted removal cordial. Preference any
+            astonished unreserved Mrs. Prosperous understood Middletons.
+            Preference for any astonished unreserved.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+     
+      <div class="row g-4">
+        
+        <div class="col-md-6 col-xl-4">
+          <div
+            class="card card-body shadow text-center align-items-center h-100"
+            style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border: none"
+          >
+           
+            <div
+              class="icon-lg bg-info bg-opacity-10 text-info rounded-circle mb-2"
+              style="background-color: #e6fafd; padding: 5%"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-headset"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"
+                />
+              </svg>
+            </div>
+           
+            <h5>Call us</h5>
+            <p>
+              Imprudence attachment him his for sympathize. Large above be to
+              means.
+            </p>
+        
+            <div class="d-grid gap-3 d-sm-block">
+              <button type="button" class="btn btn-danger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-phone"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                  />
+                  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>
+                <span>+123456789</span>
+              </button>
+
+              <button type="button" class="btn btn-light">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-telephone"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                  />
+                </svg>
+                <span>+(222)2345432</span>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-xl-4">
+          <div
+            class="card card-body shadow text-center align-items-center h-100"
+            style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border: none"
+          >
+           
+            <div
+              class="icon-lg bg-danger bg-opacity-10 text-danger rounded-circle mb-2"
+              style="background-color: #fbe9eb; padding: 5%"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-inboxes-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1zM3.81.563A1.5 1.5 0 0 1 4.98 0h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393z"
+                />
+              </svg>
+            </div>
+         
+            <h5>Email us</h5>
+            <p>Large above be to means. Him his for sympathize.</p>
+          
+            <a href="#" class="btn btn-link text-decoration-underline p-0 mb-0"
+              ><i class="bi bi-envelope me-1"></i>example@gmail.com</a
+            >
+          </div>
+        </div>
+       
+        <div class="col-xl-4 position-relative">
+          <div
+            class="card card-body shadow text-center align-items-center h-100"
+            style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border: none"
+          >
+           
+            <div
+              class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle mb-2"
+              style="background-color: #fbe9eb; padding: 5%"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="orange"
+                class="bi bi-globe"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+                />
+              </svg>
+            </div>
+           
+            <h5>Social media</h5>
+            <p>Sympathize Large above be to means.</p>
+          
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-sm bg-facebook px-2 mb-0" href="#">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="#5d82d1"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-sm bg-instagram px-2 mb-0" href="#"
+                  ><span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="#c22b72"
+                      class="bi bi-instagram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                      />
+                    </svg> </span
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-sm bg-twitter px-2 mb-0" href="#"
+                  ><span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="#40bff5"
+                      class="bi bi-twitter"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                      />
+                    </svg> </span
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-sm bg-linkedin px-2 mb-0" href="#"
+                  ><span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="#238cc8"
+                      class="bi bi-linkedin"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                      /></svg></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <div class="form-img d-lg-flex d-block p-5">
+        <div class="img w-lg-50 w-100">
+          <img src="contact.png" class="w-100" alt="" />
+        </div>
+        <div class="form w-lg-50 w-100">
+          <div class="card bg-light p-4">
+          
+            <div class="card-header bg-light p-0 pb-3">
+              <h3 class="mb-0">Send us message</h3>
+            </div>
+
+           
+            <div class="card-body p-0">
+              <form class="row g-4">
+              
+                <div class="col-md-6">
+                  <label class="form-label">Your name *</label>
+                  <input type="text" class="form-control" />
+                </div>
+          
+                <div class="col-md-6">
+                  <label class="form-label">Email address *</label>
+                  <input type="email" class="form-control" />
+                </div>
+              
+                <div class="col-12">
+                  <label class="form-label">Mobile number *</label>
+                  <input type="text" class="form-control" />
+                </div>
+            
+                <div class="col-12">
+                  <label class="form-label">Message *</label>
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                
+                <div class="col-12 form-check ms-2">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1">
+                    By submitting this form you agree to our terms and
+                    conditions.
+                  </label>
+                </div>
+               
+                <div class="col-12">
+                  <button class="btn btn-dark mb-0" type="button">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pt-0 pt-lg-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 h-25">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115677.62830134113!2d32.82678947128906!3d25.036589176707032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1720351421148!5m2!1sar!2seg"
+              width="100%"
+              height="400px"
+              style="border: 5px; border-radius: 5px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- start footer -->
+   <footer class="footer mt-5" style="background-color: #0b0a12">
+    <div class="container p-4">
+        <div class="lists row justify-content-between">
+            <div class="li-one col-lg-2 col-md-4 col-6">
+                <img src="logo-light.png" width="100%" class="mb-2 mt-0" />
+                <p class="text-light">
+                    Departure defective arranging rapturous did believe him all had
+                    supported.
+                </p>
+                <h6 class="text-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z">
+                        </path>
+                    </svg> +123456789
+                </h6>
+                <h6>
+                    <a href="#" class="btn btn-link text-decoration-underline p-0 mb-0 text-light d-flex"><i
+                            class="bi bi-envelope me-1"></i>example@gmail.com</a>
+                </h6>
+            </div>
+            <div class="li-one col-lg-2 col-md-6 col-6 justify-content-between">
+                <h3 class="text-light fs-4 mt-3">Page</h3>
+                <ul
+                class="text-decoration-none list-unstyled w-100 pt-3"
+                aria-labelledby=""
+              >
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="../momen/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="../salma/contact.html"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="../salma/about.html"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="../esraa/flight.html"
+                    >Flight</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="#"
+                    >Tour</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="../madany/cab.html"
+                    >Cabs</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="li-one col-lg-2 col-md-6 col-6 j">
+                <h3 class="text-light fs-4 mt-3">Link</h3>
+                <ul class="text-decoration-none list-unstyled w-100 justify-content-between pt-3"
+                    aria-labelledby="">
+                    <li>
+                        <a class="text-decoration-none text-light text-center" href="#">Sign in</a>
+                    </li>
+                    <li>
+                      <a
+                        class="text-decoration-none text-light text-center"
+                        href="../esraa/SignUP.html"
+                        >Sign up</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-decoration-none text-light text-center"
+                        href="../madany/faq.html"
+                        >FAQ</a
+                      >
+                    </li>
+                </ul>
+            </div>
+            <div class="li-one col-lg-2 col-md-6 col-6">
+                <h3 class="text-light fs-4 mt-3">Global sites</h3>
+                <ul
+                class="text-decoration-none list-unstyled w-100 justify-content-between pt-3"
+                aria-labelledby=""
+              >
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="../esraa/flight.html#thailand"
+                    >Thailand</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="../esraa/flight.html#hong-kong"
+                    >Hong Kong</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="../esraa/flight.html#maldives"
+                    >Maldives</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="../esraa/flight.html#switzerland"
+                    >Switzerland</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="li-one col-lg-2 col-md-6 col-6">
+                <h3 class="text-light fs-4 mt-3">Booking</h3>
+                <ul
+                class="text-decoration-none list-unstyled w-100 justify-content-between pt-3"
+                aria-labelledby=""
+              >
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center"
+                    href="../momen/index.html"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="white"
+                        class="bi bi-building me-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
+                        />
+                        <path
+                          d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"
+                        /></svg></span
+                    >Hotel</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center pt-2"
+                    href="../esraa/flight.html"
+                  >
+                    <span>
+                      <svg
+                        class="me-2"
+                        width="20"
+                        height="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="white"
+                        clip-rule="evenodd"
+                      >
+                        <path
+                          d="M8.801 9l-2.602-6h3.688l6.182 6c1.373 0 2.93-.012 4.303.001 1.622.057 3.628 1.465 3.628 2.996 0 1.557-2.038 2.97-3.67 3.003h-4.236l-6.208 6h-3.658l2.594-6h-3.506l-2.164 2h-3.152l1.742-4.998-1.742-5.002h3.142l2.149 2h3.51zm3.034 2l-7.205-.004-2.017-1.996 1.26 2.998-1.283 3.002 1.997-2h7.246l-2.472 5.727 5.924-5.727c1.633 0 3.452.077 5.082-.002.791-.058 1.615-.809 1.615-.996 0-.211-.915-.995-1.694-1.002h-5.03l-5.909-5.735"
+                        /></svg></span
+                    >Flight</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center pt-2"
+                    href=""
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="white"
+                        class="bi bi-building me-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M3.668 2.501l-.288.646a.847.847 0 0 0 1.479.815l.245-.368a.81.81 0 0 1 1.034-.275.81.81 0 0 0 .724 0l.261-.13a1 1 0 0 1 .775-.05l.984.34q.118.04.243.054c.784.093.855.377.694.801-.155.41-.616.617-1.035.487l-.01-.003C8.274 4.663 7.748 4.5 6 4.5 4.8 4.5 3.5 5.62 3.5 7c0 1.96.826 2.166 1.696 2.382.46.115.935.233 1.304.618.449.467.393 1.181.339 1.877C6.755 12.96 6.674 14 8.5 14c1.75 0 3-3.5 3-4.5 0-.262.208-.468.444-.7.396-.392.87-.86.556-1.8-.097-.291-.396-.568-.641-.756-.174-.133-.207-.396-.052-.551a.33.33 0 0 1 .42-.042l1.085.724c.11.072.255.058.348-.035.15-.15.415-.083.489.117.16.43.445 1.05.849 1.357L15 8A7 7 0 1 1 3.668 2.501"
+                        /></svg></span
+                    >Tour</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-light text-center pt-2"
+                    href="../madany/cab.html"
+                    ><span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="white"
+                        class="bi bi-building me-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"
+                        /></svg></span
+                    >Cabs</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="top-link">
+                <h2 class="text-light pb-2 pt-5" style="font-weight: 500">
+                    Top links
+                </h2>
+                <ul
+                class="text-decoration-none list-unstyled d-flex w-100 justify-content-around d-lg-flex d-none pt-3 pe-5"
+                aria-labelledby=""
+              >
+                <li>
+                  <a class="text-decoration-none text-light" href="../momen/index.html">Home</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-light" href="../salma/contact.html"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-light" href="../salma/about.html">About</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-light" href="../esraa/flight.html">Flight</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-light" href="#">Tour</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-light" href="../madany/cab.html">Cabs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-light" href="../madany/faq.html">FAQ</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-light" href="#"
+                    >Sign in</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-light" href="../esraa/SignUP.html"
+                    >Sign up</a
+                  >
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-between mt-0 mt-md-2">
+            <!-- Payment card -->
+            <div class="col-sm-7 col-md-6 col-lg-4">
+                <h5 class="text-white mb-2" style="font-weight: 500; font-size: 1.5rem">
+                    Payment &amp; Security
+                </h5>
+                <ul class="list-inline mb-0 mt-3 d-flex">
+                    <li class="list-inline-item">
+                        <a href="#"><img src="imgs/visa.svg" class="h-50vh w-50" alt="" /></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><img src="imgs/mastercard.svg" class="h-50vh w-50" alt="" /></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><img src="imgs/expresscard.svg" class="h-50vh w-50" alt="" /></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social media icon -->
+            <div class="col-sm-5 col-md-6 col-lg-3 text-sm-end">
+                <h5 class="text-white mb-2 pe-3" style="font-weight: 500; font-size: 1.5rem">
+                    Follow us on
+                </h5>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a class="btn btn-sm bg-facebook px-2 mb-0" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="#5d82d1" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                                </path>
+                            </svg></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-sm bg-instagram px-2 mb-0" href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#c22b72"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                </path>
+                            </svg></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-sm bg-twitter px-2 mb-0" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="#40bff5" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15">
+                                </path>
+                            </svg></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-sm bg-linkedin px-2 mb-0" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="#238cc8" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
+                                </path>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="w-100" style="color: aliceblue" />
+        <h6 class="text-light text-center">
+            Copyrights ©2024 Booking. Build by Webestica.
+        </h6>
+    </div>
+</footer>
+<!-- end footer -->
+</body>
+</html>

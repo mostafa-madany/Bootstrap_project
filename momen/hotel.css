@@ -1,0 +1,255 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-primary-soft {
+  color: #5143d9;
+  background-color: rgba(81, 67, 217, 0.1);
+}
+
+.btn-primary-soft:hover {
+  color: #fff;
+  background-color: #5143d9;
+  border-color: #5143d9;
+}
+
+.form-banner-input:focus {
+  border: 1px solid #6610f2 !important;
+  transition: 0.4s ease-in-out all;
+}
+
+/* .best-deal-section .splide__track {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+} */
+
+/* .best-deal-section .splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .best-deal-section .splide__slide {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  list-style-type: none !important;
+  margin: 0;
+  position: relative;
+  width: 50% !important;
+  margin-right: 50px !important;
+  height: auto !important;
+  display: flex;
+  align-items: center;
+} */
+
+/* featured section */
+.feat-card {
+  cursor: pointer;
+}
+.feat-card:hover .feat-card-img {
+  transform: scale(1.1);
+}
+.feat-card:hover .feat-card-title {
+  color: #5143d9 !important;
+}
+.feat-card-img,
+.feat-card-title {
+  transition: 0.4s ease-in-out all;
+}
+/* featured section */
+/* client section */
+.client-section img {
+  filter: grayscale(1);
+  transition: 0.4s ease-in-out all;
+  cursor: pointer;
+}
+.client-section img:hover {
+  filter: grayscale(0);
+}
+/* client section */
+/* client section */
+/* explore section */
+.explore-section .explore-card {
+  cursor: pointer;
+}
+
+.explore-section .explore-card img {
+  transition: 0.4s ease-in-out all;
+}
+
+.explore-section .explore-card-title {
+  transition: 0.4s ease-in-out all;
+}
+
+.explore-section .explore-card:hover img {
+  transform: scale(1.3) rotate(10deg);
+}
+
+.explore-section .explore-card:hover .explore-card-title {
+  color: #5143d9;
+}
+
+/* explore section */
+
+/* Navbar */
+.nav-link ul {
+  flex-grow: 1;
+}
+
+.nav-logo {
+  width: 150px;
+}
+
+.sign-btn {
+  background-color: #5143d9 !important;
+  color: white;
+}
+
+.sign-btn:hover {
+  color: #5143d9 !important;
+  background-color: white !important;
+  border: 1px solid #5143d9;
+}
+/* Navbar */
+
+@media (min-width: 1200px) {
+  .banner-form-box {
+    width: 80%;
+    margin-top: -120px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .best-deal-img {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-auto {
+    width: auto !important;
+  }
+}
+@media (max-width: 768px) {
+  .banner-search-btn {
+    top: 95% !important;
+    right: 50% !important;
+  }
+  .splide__slide {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-card {
+    width: 80% !important;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+/* <div
+id="carouselExampleControls"
+class="carousel slide"
+data-bs-ride="carousel"
+style="margin: 7rem 0"
+>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <div class="row w-50 border border-1 border-dark">
+      <div>
+        <img
+          src="./assests/images/Best-offer-img2.jpg"
+          alt=""
+          class="w-100"
+        />
+      </div>
+      <div>
+        <h5>Up to 60% OFF</h5>
+        <p>On Hotel Bookings Online</p>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="carousel-item">
+    <div class="row w-50 border border-1 border-dark">
+      <div>
+        <img
+          src="./assests/images/Best-offer-img1.jpg"
+          alt=""
+          class="w-100"
+        />
+      </div>
+      <div>
+        <h5>Up to 60% OFF</h5>
+        <p>On Hotel Bookings Online</p>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="carousel-item">
+    <div class="row w-50 border border-1 border-dark">
+      <div>
+        <img
+          src="./assests/images/Best-offer-img3.jpg"
+          alt=""
+          class="w-100"
+        />
+      </div>
+      <div>
+        <h5>Up to 60% OFF</h5>
+        <p>On Hotel Bookings Online</p>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="carousel-item">
+    <div class="row w-50 border border-1 border-dark">
+      <div>
+        <img
+          src="./assests/images/Best-offer-img4.jpg"
+          alt=""
+          class="w-100"
+        />
+      </div>
+      <div>
+        <h5>Up to 60% OFF</h5>
+        <p>On Hotel Bookings Online</p>
+      </div>
+    </div>
+  </div>
+</div>
+<button
+  class="carousel-control-prev"
+  type="button"
+  data-bs-target="#carouselExampleControls"
+  data-bs-slide="prev"
+>
+  <span
+    class="carousel-control-prev-icon"
+    aria-hidden="true"
+  ></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button
+  class="carousel-control-next"
+  type="button"
+  data-bs-target="#carouselExampleControls"
+  data-bs-slide="next"
+>
+  <span
+    class="carousel-control-next-icon"
+    aria-hidden="true"
+  ></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div> */
